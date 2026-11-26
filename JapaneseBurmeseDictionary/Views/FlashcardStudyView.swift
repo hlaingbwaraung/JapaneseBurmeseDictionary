@@ -1,5 +1,6 @@
 import SwiftUI
 
+@MainActor
 struct FlashcardStudyView: View {
     private enum DeckSource: String, CaseIterable, Identifiable {
         case bookmarks = "Saved"

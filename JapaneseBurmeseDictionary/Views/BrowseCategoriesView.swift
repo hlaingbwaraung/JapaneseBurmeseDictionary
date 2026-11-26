@@ -1,5 +1,6 @@
 import SwiftUI
 
+@MainActor
 struct BrowseCategoriesView: View {
     @ObservedObject var viewModel: DictionaryViewModel
 
@@ -113,6 +114,7 @@ struct BrowseCategoriesView: View {
     }
 }
 
+@MainActor
 struct FilteredEntryListView: View {
     let title: String
     let subtitle: String

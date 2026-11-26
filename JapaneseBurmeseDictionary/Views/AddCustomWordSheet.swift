@@ -1,5 +1,6 @@
 import SwiftUI
 
+@MainActor
 struct AddCustomWordSheet: View {
     @ObservedObject var viewModel: DictionaryViewModel
     @Environment(\.dismiss) private var dismiss

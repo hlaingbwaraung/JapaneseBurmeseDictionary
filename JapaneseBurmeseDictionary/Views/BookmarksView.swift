@@ -1,5 +1,6 @@
 import SwiftUI
 
+@MainActor
 struct BookmarksView: View {
     private enum SavedTab: String, CaseIterable, Identifiable {
         case bookmarks = "Saved"

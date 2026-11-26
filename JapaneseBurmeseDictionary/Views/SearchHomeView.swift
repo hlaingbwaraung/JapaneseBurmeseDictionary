@@ -3,6 +3,7 @@ import SwiftUI
 import UIKit
 #endif
 
+@MainActor
 struct SearchHomeView: View {
     @ObservedObject var viewModel: DictionaryViewModel
     @State private var showingAddWordSheet = false

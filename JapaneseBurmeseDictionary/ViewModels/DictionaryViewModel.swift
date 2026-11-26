@@ -29,13 +29,14 @@ public final class DictionaryViewModel: ObservableObject {
 
     public init(
         bundledEntries: [DictionaryEntry]? = nil,
-        store: UserWordsStore = UserWordsStore()
+        store: UserWordsStore? = nil
     ) {
-        self.store = store
-        self.bookmarkedIDs = store.loadBookmarkedIDs()
-        self.recentQueries = store.loadRecentQueries()
-        self.masteredIDs = store.loadMasteredIDs()
-        let savedCustom = store.loadCustomEntries()
+        let resolvedStore = store ?? UserWordsStore()
+        self.store = resolvedStore
+        self.bookmarkedIDs = resolvedStore.loadBookmarkedIDs()
+        self.recentQueries = resolvedStore.loadRecentQueries()
+        self.masteredIDs = resolvedStore.loadMasteredIDs()
+        let savedCustom = resolvedStore.loadCustomEntries()
         self.customEntries = savedCustom
 
         if let provided = bundledEntries {

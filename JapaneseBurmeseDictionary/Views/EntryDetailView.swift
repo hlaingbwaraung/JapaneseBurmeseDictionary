@@ -3,6 +3,7 @@ import SwiftUI
 import UIKit
 #endif
 
+@MainActor
 struct EntryDetailView: View {
     let entry: DictionaryEntry
     @ObservedObject var viewModel: DictionaryViewModel

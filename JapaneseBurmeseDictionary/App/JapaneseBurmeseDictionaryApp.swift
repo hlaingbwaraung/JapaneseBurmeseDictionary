@@ -1,6 +1,7 @@
 import SwiftUI
 
 @main
+@MainActor
 struct JapaneseBurmeseDictionaryApp: App {
     @StateObject private var viewModel = DictionaryViewModel()
 

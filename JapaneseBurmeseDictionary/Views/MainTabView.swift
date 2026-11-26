@@ -1,5 +1,6 @@
 import SwiftUI
 
+@MainActor
 struct MainTabView: View {
     @ObservedObject var viewModel: DictionaryViewModel
 
