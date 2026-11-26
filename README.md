@@ -18,9 +18,21 @@ A native **iOS (SwiftUI)** offline Japanese–Burmese dictionary app built for i
 
 ---
 
-## 📱 Install on Your iPhone from Your Mac (Xcode)
+## 📱 Install on Your iPhone from Your Mac
 
-1. **Clone the repository on your Mac**:
+### Option A — 1-Command Terminal Install (Fastest)
+With your iPhone unlocked and plugged into your Mac, run:
+
+```bash
+git clone https://github.com/hlaingbwaraung/JapaneseBurmeseDictionary.git
+cd JapaneseBurmeseDictionary
+./install_to_iphone.sh
+```
+
+The script automatically detects your plugged-in iPhone, reads your Xcode Apple ID Team, assigns a unique personal Bundle Identifier, builds the app, and installs & launches it directly onto your iPhone! *(If Xcode hasn't been signed into your Apple ID yet, it opens the project in Xcode with instructions.)*
+
+### Option B — Install via Xcode GUI
+1. **Clone & open on your Mac**:
    ```bash
    git clone https://github.com/hlaingbwaraung/JapaneseBurmeseDictionary.git
    cd JapaneseBurmeseDictionary
