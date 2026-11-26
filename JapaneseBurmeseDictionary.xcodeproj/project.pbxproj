@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		415682456ED00DA6068E9CCD /* JapaneseBurmeseDictionaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5E3898B3B1C525065F947 /* JapaneseBurmeseDictionaryApp.swift */; };
+		D81AB483C385C4D03E323B72 /* DictionaryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96903E43A3A2E7B60BA306C3 /* DictionaryEntry.swift */; };
+		4DE3E2336794DBEF5CAFA991 /* SearchQueryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E9B356A8004EB16AF0CBD /* SearchQueryInfo.swift */; };
+		276408FBDE89FE5A0D5E7724 /* BurmeseNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C28CF63618D34DAEE01DECF /* BurmeseNormalizer.swift */; };
+		EA6F33CADA2BE08A5B0EC986 /* RomajiKanaConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E295EBFA6AFB2BE2583872AB /* RomajiKanaConverter.swift */; };
+		58196F0C2244A229D2E9B212 /* JapaneseDeinflector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F251B613ADD2BF92811E6CCD /* JapaneseDeinflector.swift */; };
+		688A88969A438E251D0C50A9 /* DictionarySearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D3CAA589B297B312501B7F /* DictionarySearchEngine.swift */; };
+		2DCFB5989C9C5C5D18221527 /* DictionaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28695CE3C8DAA1059BB76F45 /* DictionaryRepository.swift */; };
+		2341360363CF8219936C8953 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460029C647C75A49BF8ED263 /* SpeechService.swift */; };
+		959C7211B45CE289298E848F /* UserWordsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E5468F0208815469DDE525 /* UserWordsStore.swift */; };
+		EDD23B6B81162443C0F2DC37 /* DictionaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9AC52CB1BC72283417768A /* DictionaryViewModel.swift */; };
+		30C91B0D85BADBC760EC1869 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7327932AD1A2FE0A3D822 /* MainTabView.swift */; };
+		E4700AE602C63DD808DA1FF6 /* EntryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A34B2893A138ECD9031B9 /* EntryRowView.swift */; };
+		B97B358BDBD646FCA5175459 /* SearchHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9734066A81A9C82E69F191 /* SearchHomeView.swift */; };
+		2BC045D7D57A31045166A5A6 /* EntryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F2C64352D28CB12E02704 /* EntryDetailView.swift */; };
+		54A16F3237203280AC880BCD /* BrowseCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB71D2E953DA67D83B67E2 /* BrowseCategoriesView.swift */; };
+		B6AA86D3E72E2AC76FCC496F /* BookmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A545A9A128C00AE4BDA072 /* BookmarksView.swift */; };
+		0FDA0194F38AE59D51CE2176 /* AddCustomWordSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FBD2E92F4637558891F6B /* AddCustomWordSheet.swift */; };
+		8E87A58DA2DCB3AD88562EBD /* FlashcardStudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CB3D5F033F3881D4A95FE8 /* FlashcardStudyView.swift */; };
+		17679C10959D438A8F66816E /* dictionary_entries.json in Resources */ = {isa = PBXBuildFile; fileRef = CF3E3EEB9D7BA1064A8E5615 /* dictionary_entries.json */; };
+		5DD8236257401C5A8A825603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C25392FB6DCED8D56FED3FB /* Assets.xcassets */; };
+		540508D346F07365D411F0A1 /* DictionarySearchEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E672FA3D01505CDA6EDBFF6 /* DictionarySearchEngineTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09DCF67C4EFDFA52587FB515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9D7696454746109A31D05D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12ED87CB93A0DC78810354F9;
+			remoteInfo = JapaneseBurmeseDictionary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65430418F3315878B456105A /* JapaneseBurmeseDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseBurmeseDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68F909A5CC0077B9265981D7 /* JapaneseBurmeseDictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapaneseBurmeseDictionaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F5E3898B3B1C525065F947 /* JapaneseBurmeseDictionaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseBurmeseDictionaryApp.swift; sourceTree = "<group>"; };
+		96903E43A3A2E7B60BA306C3 /* DictionaryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryEntry.swift; sourceTree = "<group>"; };
+		8D0E9B356A8004EB16AF0CBD /* SearchQueryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQueryInfo.swift; sourceTree = "<group>"; };
+		9C28CF63618D34DAEE01DECF /* BurmeseNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurmeseNormalizer.swift; sourceTree = "<group>"; };
+		E295EBFA6AFB2BE2583872AB /* RomajiKanaConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomajiKanaConverter.swift; sourceTree = "<group>"; };
+		F251B613ADD2BF92811E6CCD /* JapaneseDeinflector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseDeinflector.swift; sourceTree = "<group>"; };
+		61D3CAA589B297B312501B7F /* DictionarySearchEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionarySearchEngine.swift; sourceTree = "<group>"; };
+		28695CE3C8DAA1059BB76F45 /* DictionaryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryRepository.swift; sourceTree = "<group>"; };
+		460029C647C75A49BF8ED263 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		93E5468F0208815469DDE525 /* UserWordsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWordsStore.swift; sourceTree = "<group>"; };
+		DA9AC52CB1BC72283417768A /* DictionaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryViewModel.swift; sourceTree = "<group>"; };
+		1FB7327932AD1A2FE0A3D822 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		DA5A34B2893A138ECD9031B9 /* EntryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRowView.swift; sourceTree = "<group>"; };
+		AE9734066A81A9C82E69F191 /* SearchHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHomeView.swift; sourceTree = "<group>"; };
+		008F2C64352D28CB12E02704 /* EntryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailView.swift; sourceTree = "<group>"; };
+		ECFB71D2E953DA67D83B67E2 /* BrowseCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseCategoriesView.swift; sourceTree = "<group>"; };
+		22A545A9A128C00AE4BDA072 /* BookmarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksView.swift; sourceTree = "<group>"; };
+		248FBD2E92F4637558891F6B /* AddCustomWordSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomWordSheet.swift; sourceTree = "<group>"; };
+		49CB3D5F033F3881D4A95FE8 /* FlashcardStudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardStudyView.swift; sourceTree = "<group>"; };
+		CF3E3EEB9D7BA1064A8E5615 /* dictionary_entries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dictionary_entries.json; sourceTree = "<group>"; };
+		6C25392FB6DCED8D56FED3FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E672FA3D01505CDA6EDBFF6 /* DictionarySearchEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionarySearchEngineTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB0DCB0163DB7AB1931EC81B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9FEB44D19F7ACF8E0E46CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4244C4D85B1A467B2DB84BA2 = {
+			isa = PBXGroup;
+			children = (
+				CAC98A799BC7906A6A95999C /* JapaneseBurmeseDictionary */,
+				81F8EBE99DBAA24374519A7A /* JapaneseBurmeseDictionaryTests */,
+				027D3F5E90879AF232CAB30E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		027D3F5E90879AF232CAB30E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65430418F3315878B456105A /* JapaneseBurmeseDictionary.app */,
+				68F909A5CC0077B9265981D7 /* JapaneseBurmeseDictionaryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAC98A799BC7906A6A95999C /* JapaneseBurmeseDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				732EF8BBEBDF07D65654E156,
+				BB4E8C891BEF7EA6274422D8,
+				2215F85906827AD60E67E653,
+				77BAB1EA86532C37CEAC2538,
+				9C23626A5A169234E63616B0,
+				75FD70ECDA9BF1D4FC5144FE,
+				6C25392FB6DCED8D56FED3FB,
+			);
+			path = JapaneseBurmeseDictionary;
+			sourceTree = "<group>";
+		};
+		81F8EBE99DBAA24374519A7A /* JapaneseBurmeseDictionaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E672FA3D01505CDA6EDBFF6,
+			);
+			path = JapaneseBurmeseDictionaryTests;
+			sourceTree = "<group>";
+		};
+		732EF8BBEBDF07D65654E156 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				16F5E3898B3B1C525065F947 /* JapaneseBurmeseDictionaryApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BB4E8C891BEF7EA6274422D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				96903E43A3A2E7B60BA306C3 /* DictionaryEntry.swift */,
+				8D0E9B356A8004EB16AF0CBD /* SearchQueryInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2215F85906827AD60E67E653 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9C28CF63618D34DAEE01DECF /* BurmeseNormalizer.swift */,
+				E295EBFA6AFB2BE2583872AB /* RomajiKanaConverter.swift */,
+				F251B613ADD2BF92811E6CCD /* JapaneseDeinflector.swift */,
+				61D3CAA589B297B312501B7F /* DictionarySearchEngine.swift */,
+				28695CE3C8DAA1059BB76F45 /* DictionaryRepository.swift */,
+				460029C647C75A49BF8ED263 /* SpeechService.swift */,
+				93E5468F0208815469DDE525 /* UserWordsStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		77BAB1EA86532C37CEAC2538 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DA9AC52CB1BC72283417768A /* DictionaryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9C23626A5A169234E63616B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1FB7327932AD1A2FE0A3D822 /* MainTabView.swift */,
+				DA5A34B2893A138ECD9031B9 /* EntryRowView.swift */,
+				AE9734066A81A9C82E69F191 /* SearchHomeView.swift */,
+				008F2C64352D28CB12E02704 /* EntryDetailView.swift */,
+				ECFB71D2E953DA67D83B67E2 /* BrowseCategoriesView.swift */,
+				22A545A9A128C00AE4BDA072 /* BookmarksView.swift */,
+				248FBD2E92F4637558891F6B /* AddCustomWordSheet.swift */,
+				49CB3D5F033F3881D4A95FE8 /* FlashcardStudyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		75FD70ECDA9BF1D4FC5144FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF3E3EEB9D7BA1064A8E5615 /* dictionary_entries.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12ED87CB93A0DC78810354F9 /* JapaneseBurmeseDictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0C7CDC7C4C8C0F5A2C8DE04 /* Build configuration list for PBXNativeTarget "JapaneseBurmeseDictionary" */;
+			buildPhases = (
+				A6B351531FA9BA5A4ECF0044 /* Sources */,
+				CB0DCB0163DB7AB1931EC81B /* Frameworks */,
+				C219380E542A808F92751ED6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JapaneseBurmeseDictionary;
+			productName = JapaneseBurmeseDictionary;
+			productReference = 65430418F3315878B456105A /* JapaneseBurmeseDictionary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E82AA7188C881179C093E8F /* JapaneseBurmeseDictionaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1882C6B2934467AE2B85FC79 /* Build configuration list for PBXNativeTarget "JapaneseBurmeseDictionaryTests" */;
+			buildPhases = (
+				D6A093F9E894A74A12A714D0 /* Sources */,
+				D9FEB44D19F7ACF8E0E46CAB /* Frameworks */,
+				E08A247B7109A06600F2BB7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2299503A067FE45E7384594F /* PBXTargetDependency */,
+			);
+			name = JapaneseBurmeseDictionaryTests;
+			productName = JapaneseBurmeseDictionaryTests;
+			productReference = 68F909A5CC0077B9265981D7 /* JapaneseBurmeseDictionaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9D7696454746109A31D05D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					12ED87CB93A0DC78810354F9 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					4E82AA7188C881179C093E8F = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 12ED87CB93A0DC78810354F9;
+					};
+				};
+			};
+			buildConfigurationList = 7766ED88D3F00EAB88EED844 /* Build configuration list for PBXProject "JapaneseBurmeseDictionary" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4244C4D85B1A467B2DB84BA2;
+			productRefGroup = 027D3F5E90879AF232CAB30E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12ED87CB93A0DC78810354F9 /* JapaneseBurmeseDictionary */,
+				4E82AA7188C881179C093E8F /* JapaneseBurmeseDictionaryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C219380E542A808F92751ED6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD8236257401C5A8A825603,
+				17679C10959D438A8F66816E,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E08A247B7109A06600F2BB7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6B351531FA9BA5A4ECF0044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415682456ED00DA6068E9CCD,
+				D81AB483C385C4D03E323B72,
+				4DE3E2336794DBEF5CAFA991,
+				276408FBDE89FE5A0D5E7724,
+				EA6F33CADA2BE08A5B0EC986,
+				58196F0C2244A229D2E9B212,
+				688A88969A438E251D0C50A9,
+				2DCFB5989C9C5C5D18221527,
+				2341360363CF8219936C8953,
+				959C7211B45CE289298E848F,
+				EDD23B6B81162443C0F2DC37,
+				30C91B0D85BADBC760EC1869,
+				E4700AE602C63DD808DA1FF6,
+				B97B358BDBD646FCA5175459,
+				2BC045D7D57A31045166A5A6,
+				54A16F3237203280AC880BCD,
+				B6AA86D3E72E2AC76FCC496F,
+				0FDA0194F38AE59D51CE2176,
+				8E87A58DA2DCB3AD88562EBD,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A093F9E894A74A12A714D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540508D346F07365D411F0A1,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2299503A067FE45E7384594F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12ED87CB93A0DC78810354F9 /* JapaneseBurmeseDictionary */;
+			targetProxy = 09DCF67C4EFDFA52587FB515 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B4166C86850287F3600141E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		85C0F488990F3A7123A77E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BFC94BFE096CEBD7A10C4A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "JP-MM Dict";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hlaingbwaraung.JapaneseBurmeseDictionary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		125FFFA888B930BED33AC983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "JP-MM Dict";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hlaingbwaraung.JapaneseBurmeseDictionary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B011B97E1D82D2CF7F513A8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hlaingbwaraung.JapaneseBurmeseDictionaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseBurmeseDictionary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JapaneseBurmeseDictionary";
+			};
+			name = Debug;
+		};
+		B98C695286B8288FDD04C2FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hlaingbwaraung.JapaneseBurmeseDictionaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseBurmeseDictionary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JapaneseBurmeseDictionary";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7766ED88D3F00EAB88EED844 /* Build configuration list for PBXProject "JapaneseBurmeseDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4166C86850287F3600141E4 /* Debug */,
+				85C0F488990F3A7123A77E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0C7CDC7C4C8C0F5A2C8DE04 /* Build configuration list for PBXNativeTarget "JapaneseBurmeseDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BFC94BFE096CEBD7A10C4A0 /* Debug */,
+				125FFFA888B930BED33AC983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1882C6B2934467AE2B85FC79 /* Build configuration list for PBXNativeTarget "JapaneseBurmeseDictionaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B011B97E1D82D2CF7F513A8B /* Debug */,
+				B98C695286B8288FDD04C2FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9D7696454746109A31D05D2 /* Project object */;
+}

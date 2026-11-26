@@ -1,0 +1,44 @@
+name: iOS Build & Validation
+
+on:
+  push:
+    branches: ["main", "feat/**"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate Japanese-Burmese dictionary dataset
+        run: python3 scripts/build_dictionary.py
+
+      - name: Build App & Unit Test Bundle for iOS Simulator
+        run: |
+          xcodebuild build-for-testing \
+            -project JapaneseBurmeseDictionary.xcodeproj \
+            -scheme JapaneseBurmeseDictionary \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Run XCTest Suite on iOS Simulator
+        run: |
+          SIM_ID=$(xcrun simctl list devices available -j | python3 -c '
+          import json, sys
+          data = json.load(sys.stdin)["devices"]
+          for runtime, devs in sorted(data.items(), reverse=True):
+              if "iOS" in runtime:
+                  for d in devs:
+                      if d.get("isAvailable") and "iPhone" in d.get("name", ""):
+                          print(d["udid"])
+                          sys.exit(0)
+          ')
+          echo "Testing on Simulator UDID: $SIM_ID"
+          xcodebuild test-without-building \
+            -project JapaneseBurmeseDictionary.xcodeproj \
+            -scheme JapaneseBurmeseDictionary \
+            -destination "platform=iOS Simulator,id=$SIM_ID" \
+            CODE_SIGNING_ALLOWED=NO
